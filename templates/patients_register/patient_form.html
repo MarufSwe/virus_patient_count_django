@@ -1,0 +1,21 @@
+{% extends "patients_register/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <form method="post" autocomplete="off" class="form-control">
+        {% csrf_token %}
+        {{ form|crispy }}
+
+        <div class="row">
+            <div class="col-md-8">
+                <button type="submit" class="btn btn-success btn-block btn-lg">Submit</button>
+            </div>
+
+            <div class="col-md-4">
+                <a href="{% url 'patient_list' %}" class="btn btn-secondary btn-block btn-lg">
+                    <i class="fas fa-stream"></i> Back to the list
+                </a>
+            </div>
+        </div>
+    </form>
+{% endblock content %}
