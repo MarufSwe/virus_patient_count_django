@@ -5,7 +5,10 @@
         <thead class="border-bottom font-weight-bold">
         <tr>
             <td>Full Name</td>
+            <td>Age</td>
+            <td>Father</td>
             <td>Mobile</td>
+            <td>Email</td>
             <td>Virus Name</td>
             <td>Division</td>
             <td>District</td>
@@ -22,7 +25,10 @@
         {% for patient in patient_list %}
             <tr>
                 <td>{{ patient.full_name }}</td>
+                <td>{{ patient.age }}</td>
+                <td>{{ patient.father_name }}</td>
                 <td>{{ patient.mobile }}</td>
+                <td>{{ patient.email }}</td>
                 <td>{{ patient.virus_name }}</td>
                 <td>{{ patient.division_name }}</td>
                 <td>{{ patient.district_name }}</td>
@@ -31,7 +37,6 @@
                     {% if patient.patient_img %}
                         <img src="{{ patient.patient_img.url }}" width="70" height="60" alt="image">
                     {% endif %}
-                    {#<img src="{{ patient.patient_img.url }}" alt="image" width="50" height="50">#}
                 </td>
 
                 <td>
@@ -45,19 +50,6 @@
                         </button>
                     </form>
                 </td>
-
-                {#                <td>#}
-                {##}
-                {#                    <a href="{% url 'patient_update' patient.id %}" class="btn text-secondary px=0">#}
-                {#                        <i class="far fa-edit fa-lg"></i>#}
-                {#                    </a>#}
-                {##}
-                {#                    <a href="{% url 'patient_delete' patient.id %}">#}
-                {#                        <button type="submit" class="btn">#}
-                {#                            <i class="far fa-trash-alt fa-lg text-danger float-right"></i>#}
-                {#                        </button>#}
-                {#                    </a>#}
-                {#                </td>#}
             </tr>
         {% endfor %}
         </tbody>

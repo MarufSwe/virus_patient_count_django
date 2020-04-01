@@ -27,12 +27,13 @@ class District(models.Model):
 
 class Patients(models.Model):
     full_name = models.CharField(max_length=30)
+    age = models.CharField(max_length=3)
+    father_name = models.CharField(max_length=30)
     mobile = models.CharField(max_length=15)
+    email = models.CharField(max_length=30)
     virusName = models.ForeignKey(VirusName, on_delete=models.CASCADE, null=True, blank=True)
     suspect_date = models.DateField(null=True, blank=True)
-    patient_img = models.ImageField(upload_to='patient_images',null=True, blank=True)
-    # patient_img = models.ImageField(upload_to='patient_images')
-    # field_name = models.ImageField(upload_to=None, height_field=None, width_field=None, max_length=100, **options)
+    patient_img = models.ImageField(upload_to='patient_images', null=True, blank=True)
     district = models.ForeignKey(District, on_delete=models.CASCADE, null=True, blank=True)
 
     def __str__(self):

@@ -6,7 +6,8 @@ from .models import *
 # Register your models here.
 
 class PatientsAdmin(admin.ModelAdmin):
-    list_display = ['full_name', 'patient_img', 'mobile', 'suspect_date', 'virusName', 'district', 'division_name']
+    list_display = ['full_name', 'age', 'father_name', 'mobile', 'email', 'virusName',
+                    'suspect_date', 'division_name', 'district', 'patient_img']
 
 
 # class VirusNameAdmin(admin.ModelAdmin):
