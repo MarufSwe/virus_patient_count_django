@@ -2,7 +2,7 @@ from django.urls import path, include
 from . import views
 
 urlpatterns = [
-    path('add-patient/', views.add_patient, name='add-patient'),  # get and post request for insert operation
+    path('', views.add_patient, name='add-patient'),  # get and post request for insert operation
 
     path('edit-patient/<int:id>/', views.update_patient, name='patient_update'),  # get and post request for update operation
 

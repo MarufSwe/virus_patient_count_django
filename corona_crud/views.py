@@ -13,7 +13,7 @@ def patient_list(request):
 # Add Patient
 def add_patient(request):
     if request.method == 'POST':
-        patient_add_form = PatientsForm(request.POST)
+        patient_add_form = PatientsForm(request.POST, request.FILES)
 
         if patient_add_form.is_valid():
             patient_add_form.save()
