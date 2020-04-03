@@ -2,12 +2,18 @@ from django.http import JsonResponse
 from django.shortcuts import render, redirect
 from .forms import PatientsForm
 from .models import *
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
 # Create your views here.
+# Pagination
 def patient_list(request):
-    context = {'patient_list': Patients.objects.all()}
-    return render(request, "patients_register/patients_list.html", context)
+    patient_list = Patients.objects.all()
+    paginator = Paginator(patient_list, 2)  # Show 2 contacts per page.
+    page_number = request.GET.get('page')
+    patient_list = paginator.get_page(page_number)
+    context = {'patient_list': patient_list}
+    return render(request, 'patients_register/patients_list.html', context)
 
 
 # Add Patient
@@ -49,3 +55,15 @@ def patient_delete(request, id):
     patient = Patients.objects.get(pk=id)
     patient.delete()
     return redirect('patient_list')
+
+
+def date_picker(request):
+    return render(request, 'patients_register/DatePicker.html')
+
+# pagination
+# class Paitents():
+#     model = User
+#     template_name = 'core/user_list.html'  # Default: <app_label>/<model_name>_list.html
+#     context_object_name = 'users'  # Default: object_list
+#     paginate_by = 10
+#     queryset = User.objects.all()  # Default: Model.objects.all()

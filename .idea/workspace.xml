@@ -4,11 +4,9 @@
     <list default="true" id="d272cfd1-cc28-4484-a330-4299950dd977" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/4a82f91b-39d8-44c3-992b-4b5a6bcbdf54.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4a82f91b-39d8-44c3-992b-4b5a6bcbdf54.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/corona_crud/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/corona_crud/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/corona_crud/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/corona_crud/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corona_crud/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/corona_crud/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corona_crud/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/corona_crud/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/patients_register/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/patients_register/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/patients_register/patient_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/patients_register/patient_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/patients_register/patients_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/patients_register/patients_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +130,10 @@
       <workItem from="1585555269558" duration="13431000" />
       <workItem from="1585570746173" duration="2277000" />
       <workItem from="1585729808322" duration="2326000" />
-      <workItem from="1585733741205" duration="5909000" />
+      <workItem from="1585733741205" duration="6544000" />
+      <workItem from="1585820533225" duration="595000" />
+      <workItem from="1585826441547" duration="651000" />
+      <workItem from="1585895967324" duration="10802000" />
     </task>
     <task id="LOCAL-00001" summary="after ui fixed">
       <created>1585737599909</created>
@@ -141,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585737599909</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="after ui fixed and add age email father">
+      <created>1585742266421</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585742266421</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +157,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="after ui fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="after ui fixed" />
+    <MESSAGE value="after ui fixed and add age email father" />
+    <option name="LAST_COMMIT_MESSAGE" value="after ui fixed and add age email father" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="25" key="#Inspections" timestamp="1585740004416">
@@ -160,30 +169,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585499583939" />
-    <state x="315" y="0" key="CommitChangelistDialog2" timestamp="1585737596925">
+    <state x="315" y="0" key="CommitChangelistDialog2" timestamp="1585742257027">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="315" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585737596925" />
+    <state x="315" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585742257027" />
     <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1585737816706">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585737816706" />
-    <state width="1323" height="301" key="GridCell.Tab.0.bottom" timestamp="1585741706540">
+    <state width="1323" height="300" key="GridCell.Tab.0.bottom" timestamp="1585913341332">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="301" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585741706540" />
-    <state width="1323" height="301" key="GridCell.Tab.0.center" timestamp="1585741706540">
+    <state width="1323" height="300" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585913341332" />
+    <state width="1323" height="300" key="GridCell.Tab.0.center" timestamp="1585913341332">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="301" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585741706540" />
-    <state width="1323" height="301" key="GridCell.Tab.0.left" timestamp="1585741706540">
+    <state width="1323" height="300" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585913341332" />
+    <state width="1323" height="300" key="GridCell.Tab.0.left" timestamp="1585913341328">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="301" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585741706540" />
-    <state width="1323" height="301" key="GridCell.Tab.0.right" timestamp="1585741706540">
+    <state width="1323" height="300" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585913341328" />
+    <state width="1323" height="300" key="GridCell.Tab.0.right" timestamp="1585913341332">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="301" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585741706540" />
+    <state width="1323" height="300" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585913341332" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1585570617414">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -204,13 +213,24 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="372" y="12" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585737659629" />
-    <state x="550" y="103" key="Vcs.Push.Dialog.v2" timestamp="1585737611466">
+    <state x="550" y="103" key="Vcs.Push.Dialog.v2" timestamp="1585742276910">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="550" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585737611466" />
+    <state x="550" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585742276910" />
     <state x="390" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1585570748607">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585570748607" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/corona_crud/forms.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
